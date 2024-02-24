@@ -16,6 +16,7 @@ Here's an example of an event handler in React:
 <button onClick={handleClick}>
     Click me
 </button>
+```
 
 ## Main File: App.js
 
