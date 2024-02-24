@@ -1,0 +1,110 @@
+/* Use a linear gradient for the background of the entire app */
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #a9c9ff 10%, #ffbbec 100%);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Style for the Calculator Title */
+h1 {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
+}
+
+/* Glassmorphic style for the display */
+.display {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1em;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
+/* Button grid container */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+/* General button styling */
+button {
+  padding: 15px;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease-in-out;
+}
+
+/* Styling for number buttons */
+button.number {
+  background: rgba(0, 136, 255, 0.8);
+}
+
+/* Styling for operator buttons */
+button.operator {
+  background: rgba(0, 255, 136, 0.8);
+}
+
+/* Special styling for the zero button */
+button.zero {
+  grid-column: span 2; /* Makes the zero button span two columns */
+  background: rgba(255, 136, 0, 0.8);
+}
+
+/* Special styling for the equals button */
+button.equals {
+  background: rgba(136, 255, 0, 0.8);
+}
+
+/* Styling for the clear button */
+button.clear {
+  background: rgba(255, 0, 0, 0.8);
+  grid-column: span 4;
+}
+
+/* Interactive effects */
+button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+button:active {
+  transform: scale(0.98); /* Slightly shrink buttons when clicked */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .display, .buttons {
+    width: 90vw;
+  }
+
+  button {
+    font-size: 1.2rem;
+  }
+}
