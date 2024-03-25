@@ -1,4 +1,3 @@
-*Create a readme.md about this app note project*
 # App Note Project
 
 This project is a note-taking app built using React.
