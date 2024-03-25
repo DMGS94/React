@@ -6,9 +6,9 @@ This project is a note-taking app built using React.
 ## Features
 
 - Create, edit, and delete notes
-- Categorize notes with tags
-- Search notes by title or content
-- Sort notes by date or category
+- Categorize notes with tags (Not Built)
+- Search notes by title or content (Not Built)
+- Sort notes by date or category (Not Built)
 
 ## Installation
 
